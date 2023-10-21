@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+        <caption>basic information</caption>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Place</th>
+      </tr>
+      <tr>
+        <td>saniya</td>
+        <td>12</td>
+        <td>f</td>
+        <td>mpl</td>
+      </tr>
+      <tr>
+        <td>sulthana</td>
+        <td>9</td>
+        <td>f</td>
+        <td>blr</td>
+      </tr>
+    </table>
+
+    <script>
+      let t = document.body.firstElementChild.firstElementChild
+      console.log(t);
+      console.log(t.rows);  //collection of the elements 
+      console.log(t.caption);  //reference to caption
+      console.log(t.th);     //reference to <th>
+      console.log(t.td.firstElementChild);
+
+      //table.tfoot -->reference to tfoot
+      //table.tbodies-->reference to tbody elements
+      //tbody.rows -->collection of tr inside
+      //tr.cells-->collection of td and th elements
+      //tr.sectionRowBOrder-->border of tr inside enclosing elements
+      //tr.rowIndex-->row number starting from zero
+
+      //console.log(a.lastChild.previousSibling);
+      
+      //   let b=document.firstElementChild.nextSibling
+      //   console.log(b)
+      
+    </script>
+  </body>
+</html>

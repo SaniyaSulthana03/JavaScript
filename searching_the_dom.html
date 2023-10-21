@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heads">this is heading</h1>
+    <div class="heads">
+        <p>hello world!</p>
+    </div>
+    <input type="text" name="search">
+    <h2 id="hello">hello</h2>
+    <p>i am searchig the dom</p>
+    <span class="this">my plan is to complete the javascript with in five days</span>
+
+    <script>
+        // let headings=document.getElementByClassName(".heads")
+        // headings.style.color="pink"
+        //DOM navigation properties are helpful when the elements are close to each other.if they are not close to each other ,we have same more method to search the DOM 
+
+        //-->document.getElementById
+        //this method is used to get the element with a given "id" attribute
+        const heading5=document.getElementById("hello");
+        heading5.style.color = "green";
+   
+
+        //-->document.querySelectorAll
+        //returns all elements inside an element matching the given css selector
+        const headings=document.querySelectorAll(".heads");
+        headings[0].style.color="yellow"
+        headings[1].style.color="blue"
+        console.log(headings);
+
+        document.querySelector(".this").style.color="pink"
+        document.querySelector(".this").style.backgroundcolor="red"
+
+        console.log(document.getElementsByTagName("p"))
+        console.log(document.querySelector(".this").getElementsByClassName("p"))
+
+        console.log(document.getElementsByName("search"))
+
+    </script>
+</body>
+</html>

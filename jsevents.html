@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js Events</title>
+    <style>
+      #btn {
+        padding: 10px;
+        background-color: red;
+        border: 2px solid black;
+        color: yellow;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Browser events:
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+
+    submit
+    focus
+
+    DOMContentLoaded
+
+    transitionend -->
+    <div class="para">
+      <h1>this are js events</h1>
+      <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+        reprehenderit illo quod magni, non aliquid deleniti sapiente eaque
+        nihil, atque suscipit neque vitae corporis voluptatem accusantium
+        explicabo sequi. Quaerat saepe placeat nesciunt nulla officiis
+        consequuntur aut rem, eveniet excepturi cumque aliquid nam officia.
+        Laborum explicabo adipisci consectetur, ut eos rerum!
+      </p>
+    </div>
+    <button id="btn" onclick="toggleHide()">show/Hide</button>
+    <script>
+        para.addEventListener('mouseover', function run(){
+            alert('mouse inside para')
+        });
+
+        para.addEventListener('mouseout', function run(){
+            alert('mouse went outside the para')
+        });
+
+
+
+
+      function toggleHide() {
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('para');
+        if (para.style.display != "none") {
+          para.style.display = 'none';
+        } else {
+          para.style.display = 'block';
+        }
+      }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>hello world!</p>
+    <script>
+      //window is a global object
+
+      /*window.console.log(window)
+        console.log(window)
+        console.log(window.body)   //page body as js object
+        document.body.style.background="pink" //we can able to change the css*/
+
+      //window --> includes DOM,BOM and javascript core
+      //DOM-->Document object model
+      //Bom-->
+      //poore html page ko object banaya gayahai aur usko document ka name diya gaya hai
+
+      //BOM --> Browser object model
+      //bom represents additional objects provided by the browser(host environment) for working with everything except the document
+
+      //the functions alert,confirm and and prompt are also a part of the bom
+      //location.hef="https:www.google.com"
+      //togo the next page
+
+      //problem1
+      /* let num=prompt("enter the number")
+        if(num>18){
+            console.log('can drive')
+        }
+        else{
+            console.log('not allowed')
+        }
+        */
+
+      //problem 1 another method
+      /*let age = prompt("Enter the age");
+      age = Number.parseInt(age);
+      const canDrive = (age) => {
+        return age >= 20 ? true : false;
+      };
+
+      if (canDrive(age)) {
+        alert("can drive");
+      } else {
+        alert("cannot drive");
+      }*/
+
+      //problem 2
+      /*let runAgain=true;
+      while (runAgain) {
+        let age = prompt("Enter the age");
+        age = Number.parseInt(age);
+        const canDrive = (age) => {
+        return age >= 20 ? true : false;
+      };
+        if (canDrive(age)) {
+          alert("can drive")
+        } else {
+          alert("cannot drive")
+        }
+        runAgain = confirm("do you want to play again");
+      }*/
+
+      //problem 3
+      /*let runAgain=true;
+      while (runAgain) {
+        let age = prompt("Enter the age");
+        age = Number.parseInt(age);
+        if(age<0){
+            console.error("please enter a valid age")
+            break;
+        }
+        if (canDrive(age)) {
+          alert("can drive")
+        } else {
+          alert("cannot drive")
+        }
+        runAgain = confirm("do you want to play again");
+      }*/
+
+      //problem 4
+      /*let number=prompt("Enter the number")
+      number=Number.parseInt(number);
+
+      if (number>4){
+      location.href="https://www.google.com" 
+      } */ 
+      
+      //problem 5
+      let color=prompt("enter the background color")
+      document.body.style.background=color;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><div>
+        <div class="first">first</div>
+        <div class="second">second</div>
+        <div class="third">third</div>        
+
+    </div>
+    <script>
+        //they sre read-only 
+        //they are live elem.childNode variables reference will automatically update if childNodes of elem is changed
+        //they are iterable using for loop //for of
+        //$0.nextSibling  $0 refers to the current element
+        console.log(document.body.firstChild)
+        console.log(document.body.lastChild)
+        let a=document.body.firstChild
+        console.log(a.parentNode) //it return when node is present irrespective of the node
+        console.log(a.parentElement)  //it returns only when the valid html tag is present
+        console.log(a.firstChild.nextSibling)
+    </script>
+</body>
+</html>

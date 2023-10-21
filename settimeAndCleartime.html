@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set time/clear time</title>
+</head>
+<body>
+    <div class="container">
+        time now is <span id="time">
+
+        </span>
+    </div>
+    <script>
+        console.log("this is set time/clear time");
+        //setTimeout--allows us to run the function once after the interval of time-->
+        //clearTimeout--allows us to run the function repeatedly after the interval of time-->
+        function greet(name,byeText){
+            console.log("Hello goodevening"+name+" "+byeText);
+        }
+
+        // timeout=setTimeout(greet,1000,"saniya","saniya the great");
+        // console.log(timeout);  //-->wrong as it is calling the function inside setTimeout
+        // clearTimeout(timeout);  
+        // setTimeout(greet(),2000); //-->wrong as it is calling the function inside setTimeout
+
+        // intervalId=setInterval(greet,2000,"sanu","good night");//it will printthe statement every sinle second
+        // clearInterval(intervalId);
+
+        function dispalyTime(){
+            time=new Date();
+            console.log("time");
+            document.getElementById('time').innerHTML=time;
+        }
+        setInterval(dispalyTime,1000);
+
+
+
+
+
+
+    </script>
+</body>
+</html>
